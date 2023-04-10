@@ -1,4 +1,4 @@
-def bisection_method(f, a, b, tol=1e-6, max_iter=100):
+def bisection_method(f, a, b, tol=0.01, max_iter=100):
     """
     Решение нелинейного уравнения методом деления пополам.
 
@@ -21,13 +21,11 @@ def bisection_method(f, a, b, tol=1e-6, max_iter=100):
         iteration += 1
         print("______________________________")
         print(f"Номер шага: {iteration}")
-        print(f"a: {a}")
-        print(f"b: {b}")
 
         # находим середину интервала
         c = (a + b) / 2
-        print(f"c: {c}")
         print(f"Погрешность: {abs(b - a) / 2}")
+        print(f"Значение x: {c}")
         # print(f"_____________________________")
         # проверяем, является ли середина корнем или достигли заданной точности
         if abs(f(c)) < tol or abs(b - a) / 2 < tol:

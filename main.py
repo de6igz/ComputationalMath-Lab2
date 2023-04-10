@@ -1,6 +1,8 @@
-import bisection_method,tangent_method
+import bisection_method
+import tangent_method
 
-if __name__ == '__main__':
+
+def main():
     print("Выберите уравнение: \n"
           " 1: x^2 - 3 = 0\n"
           " 2: x^3 - 5x - 9\n")
@@ -16,3 +18,7 @@ if __name__ == '__main__':
         tangent_method.tangent_method_solve(equation=equation)
     else:
         exit("Нет такого метода")
+
+
+if __name__ == '__main__':
+    main()
