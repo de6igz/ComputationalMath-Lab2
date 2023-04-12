@@ -41,14 +41,8 @@ def bisection_method(f, a, b, tol=0.01, max_iter=100):
     raise ValueError("Не удалось найти корень за максимальное число итераций.")
 
 
-# пример использования функции
-# def f(x):
-#     return x ** 3 - 5 * x - 9
 def f(x):
     return x * x - 3
-
-
-a, b = 1, 3
 
 
 def solve(f, a, b):

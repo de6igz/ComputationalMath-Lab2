@@ -1,5 +1,5 @@
 class NewtonMethod:
-    def __init__(self, equations, jacobian, x0, eps=1e-6, max_iter=100):
+    def __init__(self, equations, jacobian, x0, eps=0.01, max_iter=100):
         self.equations = equations
         self.jacobian = jacobian
         self.x = x0
